@@ -31,7 +31,7 @@ const Home: NextPage = () => {
               <br/>
               <Text as='b' color='gray.700'>Reasons:</Text>
               <UnorderedList mb={8}>
-                {file.reasons.map((reason, index) => (
+                {file.reasons.map((reason:any, index:number) => (
                   <ListItem key={index}>{reason}</ListItem>
                 ))}
               </UnorderedList>

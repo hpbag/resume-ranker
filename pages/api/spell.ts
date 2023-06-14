@@ -26,6 +26,9 @@ export default async function handler(
         },
       }),
     });
+    console.log(process.env.RESPELL_API_KEY)
+    console.log(process.env.SPELL_ID)
+    console.log(process.env.SPELL_VERSION_ID)
     const output = await response.json();
     console.log("api: ", output)
     return res.status(200).json(output);

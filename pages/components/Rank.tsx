@@ -4,7 +4,6 @@ import { FilePond, FilePondProps } from 'react-filepond';
 import { Button, Container, Stack, Input, Box, Text } from '@chakra-ui/react';
 import 'filepond/dist/filepond.min.css';
 
-//converting any blob into a URL
 async function basicUpload(params) {
   const baseUrl = "https://api.upload.io";
   const path = `/v2/accounts/${params.accountId}/uploads/binary`;
